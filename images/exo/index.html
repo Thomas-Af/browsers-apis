@@ -10,10 +10,45 @@
   <body>
     <main>
       <ul>
-        <li>First image</li>
-        <li>Second image</li>
-        <li>Third image</li>
-        <li>Last image</li>
+        <li>
+          <picture>
+            <source srcset="/public/1-l.jpeg" media="(min-width: 900px)" />
+            <img src="/public/2-s.jpeg" alt="" fetchpriority="high" />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source srcset="/public/2-l.jpeg" media="(min-width: 900px)" />
+            <img
+              src="/public/3-s.jpeg"
+              alt=""
+              loading="lazy"
+              fetchpriority="low"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source srcset="/public/3-l.jpeg" media="(min-width: 900px)" />
+            <img
+              src="/public/4-s.jpeg"
+              alt=""
+              loading="lazy"
+              fetchpriority="low"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source srcset="/public/4-l.jpeg" media="(min-width: 900px)" />
+            <img
+              src="/public/1-s.jpeg"
+              alt=""
+              loading="lazy"
+              fetchpriority="low"
+            />
+          </picture>
+        </li>
       </ul>
     </main>
   </body>
